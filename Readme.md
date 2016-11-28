@@ -16,6 +16,6 @@ Copyright 2016 Clemens Schäfermeier, clemens ( at ) fh-muenster.de
     You should have received a copy of the GNU General Public License
     along with beamin.  If not, see <http://www.gnu.org/licenses/>.
 
-### Allan variance ###
+### beamin ###
 
 A program to perform mode matching and lens positioning tasks via a nonlinear fit routine. Comes without GUI, but provides a complete toolkit for ABCD matrix formalism and nonlinear optimisation via Nelder--Mead simplex.
