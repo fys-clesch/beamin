@@ -497,10 +497,11 @@ def eigenmod_res(M):
         c_re = 0.
         t3 = M[0][1] / M[1][0]
         if t3 >= 0.:
-            print("\nfound no eigenmode solution")
+            print("\nfound no eigenmode")
             c_im = 0.
         else:
             c_im = np.sqrt(-t3)
+            print("\nfound eigenmode")
         return complex(c_re, c_im)
 
     t2 = 2. * M[1][0]
@@ -508,9 +509,10 @@ def eigenmod_res(M):
     t2 *= t2
     t3 = (t3 + 4. * M[0][1] * M[1][0]) / t2
     if t3 >= 0.:
-        print("\nfound no eigenmode solution")
+        print("\nfound no eigenmode")
         c_re = c_im = 0.
     else:
+        print("\nfound eigenmode")
         c_im = np.sqrt(-t3)
     return complex(c_re, c_im)
 
